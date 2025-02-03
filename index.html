@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+
+    <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+            <h2>How to Play</h2>
+            <p>Guess the correct color from the six options. You have 5 rounds to get the highest score!</p>
+            <button id="startGameButton">Start Game</button>
+        </div>
+    </div>
+
+    <h1>Color Guessing Game</h1>
+    <p data-testid="gameInstructions">Guess the correct color!</p>
+
+    <div id="colorBox" data-testid="colorBox"></div>
+
+    <div id="colorOptions"></div>
+
+    <p id="gameStatus" data-testid="gameStatus"></p>
+
+    <p>Score: <span id="score" data-testid="score">0</span></p>
+    <p>Round: <span id="round" data-testid="round">1</span>/5</p>
+
+    <button id="newGameButton" data-testid="newGameButton">New Game</button>
+
+    <script src="JavaScript/scripts.js"></script>
+</body>
+</html>
