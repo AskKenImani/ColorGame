@@ -52,12 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function checkGuess(selectedColor, button) {
+        colorBox.style.backgroundColor = targetColor;
         if (selectedColor === targetColor) {
-            gameStatus.textContent = "Correct!";
+            gameStatus.textContent = "Correct! You are a genius.";
             gameStatus.style.color = "green";
             score++;
         } else {
-            gameStatus.textContent = `Wrong! The correct color was ${targetColor}`;
+            gameStatus.textContent = `Oh! no. The correct color was ${targetColor}, try again`;
             gameStatus.style.color = "red";
             colorBox.style.backgroundColor = targetColor;
         }
